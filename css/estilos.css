@@ -1,6 +1,7 @@
 body{
     background-color:#FFEFD5;
-    padding: 15px;
+    padding: 0;
+    margin: 0;
     font-family: 'Fjalla One', sans-serif;
 }
 
@@ -18,8 +19,7 @@ body{
 }
 
 #menu{
-    background-color: rgb(44, 44, 44);
-
+    background-color: rgb(44, 44, 44)
 }
 
 #menu ul{
@@ -44,30 +44,106 @@ body{
     background-color: #42B881;
 }
 
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .item-r{
     float: right;
 }
 
-.seccion1{
-    padding: 20px;
-    
+.seccion1,
+.seccion2,
+.seccion3{
+        
     font-size: 1.5em;
     color: black;
+    width: 100%;
 }
 .seccion1 h1{
     text-align: center;
 }
 
-.seccion2{
-    padding: 20px;
-    font-size: 1.5em;
-    color: black;
+.seccion1 p,
+.seccion2 p,
+.seccion3 p{
+    padding: 0 30px;
 }
 
-.seccion3{
+.fotos-s1,
+.fotos-s2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.fotos-paises{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pais{
     padding: 20px;
-    font-size: 1.5em;
-    color: black;
+    width: 30%;
+   
+}
+
+.pais img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.fotos-paises p{
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.2em;
+}
+
+.fotos-paises a{
+    text-decoration: none;
+}
+.fotos-paises a:hover{
+    color: lightcoral;
+}
+
+.fotos-comidas{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comida{
+    padding: 20px;
+    width: 30%;
+   
+}
+
+.comida img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.fotos-comidas p{
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.2em;
+}
+
+.fotos-comidas a{
+    text-decoration: none;
+}
+.fotos-comidas a:hover{
+    color: lightcoral;
 }
 
 footer{
@@ -80,28 +156,6 @@ footer{
     background: grey;
 }
 
-.paises{
-    margin: auto;
-    font-size: 2em;
-    text-align: center;
-    
-}
-
-.paises tr td{
-    padding: 20px;
-    
-}
-.img-paises{
-    width: 550px;
-    height: 365px;
-}
-
-.paises a{
-    text-decoration: none;
-}
-.paises a:hover{
-    color: rgb(82, 195, 199);
-}
 
 .selected-li{
     background-color:#42B881 ;
@@ -109,11 +163,9 @@ footer{
 }
 
 .foto-inicio1{
-    
-    margin:20px;    
-    width: 550px;
-    height: 365px;
-}
+    padding: 20px;
+    width: 30%;
+} 
 
 .c-cabecera{
     font-family: 'Oswald',sans-serif;
