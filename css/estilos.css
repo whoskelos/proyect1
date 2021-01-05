@@ -1,0 +1,144 @@
+body{
+    background-color:#FFEFD5;
+    padding: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.cabecera{
+    
+}
+.cabecera h1{
+    font-family: 'Oswald',sans-serif;
+    font-size: 80px;
+    color:black;
+    text-align: center;
+}
+.logo{
+    width: 160px;
+}
+
+#menu{
+    background-color: rgb(44, 44, 44);
+
+}
+
+#menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu ul li{
+    display: inline-block;
+}
+
+#menu ul li a{
+    color: white;
+    font-size: 1.2em;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+#menu ul li a:hover{
+    background-color: #42B881;
+}
+
+.item-r{
+    float: right;
+}
+
+.seccion1{
+    padding: 20px;
+    
+    font-size: 1.5em;
+    color: black;
+}
+.seccion1 h1{
+    text-align: center;
+}
+
+.seccion2{
+    padding: 20px;
+    font-size: 1.5em;
+    color: black;
+}
+
+.seccion3{
+    padding: 20px;
+    font-size: 1.5em;
+    color: black;
+}
+
+footer{
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    background: grey;
+}
+
+.paises{
+    margin: auto;
+    font-size: 2em;
+    text-align: center;
+    
+}
+
+.paises tr td{
+    padding: 20px;
+    
+}
+.img-paises{
+    width: 550px;
+    height: 365px;
+}
+
+.paises a{
+    text-decoration: none;
+}
+.paises a:hover{
+    color: rgb(82, 195, 199);
+}
+
+.selected-li{
+    background-color:#42B881 ;
+
+}
+
+.foto-inicio1{
+    
+    margin:20px;    
+    width: 550px;
+    height: 365px;
+}
+
+.c-cabecera{
+    font-family: 'Oswald',sans-serif;
+    font-size: 60px;
+    color:Black;
+    text-align: center;
+}
+
+.t-rsss{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.t-rsss td{
+    padding: 0 0 40px 0;
+}
+
+.t-rsss tr td{
+    
+    vertical-align: middle;
+}
+
+
+.fotosrrss{
+    width: 300px;
+    height: 300px;
+}
