@@ -1,187 +1,121 @@
-body{
-    background-color:#FFEFD5;
-    padding: 0;
-    margin: 0;
-    font-family: 'Fjalla One', sans-serif;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*CSS RESET DE LOS NAVEGADORES */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 
-.cabecera{
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Cabecera y menu */
+.header{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    height: 100vh;
+    background: url(../imagenes/contacto.jpg) center top;
+    background-size: cover;
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-.cabecera h1{
-    font-family: 'Oswald',sans-serif;
-    font-size: 80px;
-    color:black;
+
+.navbar{
+    height: 63px;
+    background: rgba(0, 0, 0, 0.863);
+}
+
+.navbar a{
+    color:white;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+}
+
+/* Cuerpo */
+
+body{
     text-align: center;
 }
-.logo{
-    width: 160px;
-}
 
-#menu{
-    background-color: rgb(44, 44, 44)
-}
-
-#menu ul{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-#menu ul li{
-    display: inline-block;
-}
-
-#menu ul li a{
-    color: white;
-    font-size: 1.2em;
-    display: block;
-    padding: 20px 20px;
+td a{
     text-decoration: none;
-}
-
-#menu ul li a:hover{
-    background-color: #42B881;
-}
-
-.main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.item-r{
-    float: right;
-}
-
-.seccion1,
-.seccion2,
-.seccion3{
-        
-    font-size: 1.5em;
     color: black;
-    width: 100%;
-}
-.seccion1 h1{
-    text-align: center;
 }
 
-.seccion1 p,
-.seccion2 p,
-.seccion3 p{
-    padding: 0 30px;
-}
-
-.fotos-s1,
-.fotos-s2{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.fotos-paises{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.pais{
-    padding: 20px;
-    width: 30%;
-   
-}
-
-.pais img {
-    object-fit: cover;
-    width: 100%;
-    height: 300px;
-}
-
-.fotos-paises p{
-    text-align: center;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.2em;
-}
-
-.fotos-paises a{
-    text-decoration: none;
-}
-.fotos-paises a:hover{
-    color: lightcoral;
-}
-
-.fotos-comidas{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.comida{
-    padding: 20px;
-    width: 30%;
-   
-}
-
-.comida img {
-    object-fit: cover;
-    width: 100%;
-    height: 300px;
-}
-
-.fotos-comidas p{
-    text-align: center;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.2em;
-}
-
-.fotos-comidas a{
-    text-decoration: none;
-}
-.fotos-comidas a:hover{
-    color: lightcoral;
-}
-
-footer{
-    margin-top: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: white;
-    font-size: 1.2em;
-    text-align: center;
-    background: grey;
-}
-
-
-.selected-li{
-    background-color:#42B881 ;
-
-}
-
-.foto-inicio1{
-    padding: 20px;
-    width: 30%;
-} 
-
-.c-cabecera{
-    font-family: 'Oswald',sans-serif;
-    font-size: 60px;
-    color:Black;
-    text-align: center;
+td a:hover{
+    color: rgb(0, 130, 153);
 }
 
 .t-rsss{
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 60px;
 }
 
 .t-rsss td{
     padding: 0 0 40px 0;
+    font-family: 'Oswald',sans-serif;
+    font-size: 25px;
+    font-weight: 5;
 }
 
 .t-rsss tr td{
@@ -191,6 +125,19 @@ footer{
 
 
 .fotosrrss{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+}
+
+.pie{
+    height: 63px;
+    font-family: 'Oswald',sans-serif;
+    background: #3B3B3B;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.pie p{
+    padding-top: 20px;
 }
