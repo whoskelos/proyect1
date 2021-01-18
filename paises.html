@@ -2,61 +2,65 @@
 <html lang="es">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/paises.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagenes/icono.ico" type="image/x-icon">
     <title>Paises</title>
 </head>
 
 <body>
-    <header>
-        <div class="cabecera">
-            <h1>Dream Flying <img class="logo" src="./imagenes/logo_web.png"></h1>
-        </div>
+    <header class="header">
+        <h1>Paises</h1>
     </header>
-    <div id="menu">
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li class="selected-li"><a href="#">Paises</a></li>
-            <li><a href="./comidas.html">Comidas</a></li>
-            <li class="item-r"><a href="#">Contacto</a></li>
-            <li class="item-r"><a href="https://www.linkedin.com/in/kelvinguerreromite/" target="_blank">Sobre mi</a></li>
-        </ul>
-    </div>
-    <div class="main">
-        <div class="fotos-paises">
-            <div class="pais">
-                <img src="./imagenes/suiza.jpg">
-                <p><a href="https://es.wikipedia.org/wiki/Suiza">Suiza</a></p>
-            </div>
-            <div class="pais">
-                <img src="./imagenes/dinamarca.jpg">
-                <p><a href="https://es.wikipedia.org/wiki/Dinamarca" target="_blank">Dinamarca</a></p>
-            </div>
-            <div class="pais">
-                <img src="./imagenes/alemania.jpeg">
-                <p><a href="https://es.wikipedia.org/wiki/Alemania" target="_blank">Alemania</a></p>
-            </div>
-            <div class="pais">
-                <img src="./imagenes/noruega.jpg">
-                <p><a href="https://es.wikipedia.org/wiki/Noruega" target="_blank">Noruega</a></p>
-            </div>
-            <div class="pais">
-                <img src="./imagenes/rusia.jpg">
-                <p><a href="https://es.wikipedia.org/wiki/Rusia" target="_blank">Rusia</a></p>
-            </div>
-            <div class="pais">
-                <img src="./imagenes/eeuu.jpg">
-                <p><a href="https://es.wikipedia.org/wiki/Estados_Unidos" target="_blank">Estados Unidos</a></p>
-            </div>
-        </div>
-    </div>
-    
 
+    <!--menu de navegacion-->
+    <nav class="navbar">
+        <a href="./index.html">Inicio</a>
+        <a href="#">Paises</a>
+        <a href="./comidas.html">Comidas</a>
+        <a href="#">Sobre mi</a>
+        <a href="./contacto.html">Contacto</a>
+    </nav>
+
+    <!--Secciones Paises-->
+    <div class="container">
+        <div class="box">
+            <img src="./imagenes/rusia.jpg">
+            <span>Rusia</span>
+        </div>
+
+        <div class="box">
+            <img src="./imagenes/alemania.jpeg">
+            <span>Alemania</span>
+        </div>
+
+        <div class="box">
+            <img src="./imagenes/dinamarca.jpg">
+            <span>Dinamarca</span>
+        </div>
+
+        <div class="box">
+            <img src="./imagenes/noruega.jpg">
+            <span>Noruega</span>
+        </div>
+
+        <div class="box">
+            <img src="./imagenes/eeuu.jpg">
+            <span>EEUU</span>
+        </div>
+
+        <div class="box">
+            <img src="./imagenes/suiza.jpg">
+            <span>Suiza</span>
+        </div>
+
+    </div>
 
     <footer>
         <div class="pie">

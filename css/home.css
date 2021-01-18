@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*CSS RESET DE LOS NAVEGADORES */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* LAYOUT */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Oswald',sans-serif;
+    font-size: 1.5em;
+}
+
+.header{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.list-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-services img{
+    width: 114px;
+    height: 122px;
+}
+
+.list-services figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+/* GENERIC ITEMS */
+
+.header{
+    height: 100vh;
+    background: url(../imagenes/fondo-home.jpg) center top;
+    background-size: cover;
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    color: black;
+}
+
+.navbar{
+    height: 63px;
+    background: rgba(0, 0, 0, 0.863);
+}
+
+.navbar a{
+    color:white;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+}
+
+.title{
+    margin-bottom: 40px;
+    font-family: 'Oswald',sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+
+p{
+    margin-bottom: 40px;
+}
+
+/* PARTS OF THE WEB */
+
+.content {
+    padding: 80px 0;
+}
+
+.who{
+    background: rgba(0, 0, 0, 0.767);
+    color: white;
+}
+
+.who p{
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+.historia p{
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+.historia{
+    background: #DDDFE0;
+}
+
+/* LIST SERVICES */
+
+.list-services figure{
+    position: relative;
+    width: 150px;
+    height: 190px;
+}
+
+
+
+.list-services img{
+    position: relative;
+    
+}
+
+.list-services li{
+    padding:  0 30px;
+}
+
+.list-services figcaption{
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: -40px;
+}
+
+/* FOOTER */
+
+.pie{
+    height: 63px;
+    font-family: 'Oswald',sans-serif;
+    background: #3B3B3B;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.pie p{
+    padding-top: 20px;
+}
